@@ -27,8 +27,7 @@ if __name__=="__main__":
     #SETTING
     APK_DIRECTORY = "./TESTS/"
     LABEL = 0
-    n_gram = 4
-    
+    n_gram = 5
     
     
     #초기 값
@@ -36,7 +35,7 @@ if __name__=="__main__":
     list_apk = os.listdir(APK_DIRECTORY)
 
     #opcode 데이터 수집    
-    for apk in tqdm(list_apk[:5]):
+    for apk in tqdm(list_apk):
         try:
             apk = APK_DIRECTORY+apk
             a,d,dx = AnalyzeAPK(apk)
